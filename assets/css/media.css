@@ -1,0 +1,13 @@
+@media only screen and (max-width: 767px){
+    .tagline span {
+        font-size: 70%;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .tagline span {
+        margin: -30px -50px;
+        font-size: 50%;
+    }
+}
+

@@ -12,8 +12,9 @@
         <!-- CSS only -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/media.css">
     </head>
-    <body onload="doMove()">
+    <body>
         <header>
             <div class="jumbotron jumbotron-fluid jumbotron-override text-center" style="padding-top: 0;">
                 <nav class="navbar navbar-expand-md navbar-dark navbar-override">
@@ -35,10 +36,10 @@
                     </div>
                 </nav>
                 
-                <div class="tagline">
-                    <h1>
+                <div class="tagline container-fluid">
+                    <h1 class="display-1">
                         <span class="word" data-velocity="1" id="word1">INNOVATION</span>
-                        <span class="word accented-text" data-velocity="-1" id="word2">through</span>
+                        <span class="wordaccented-text" data-velocity="-1" id="word2">through</span>
                         <span class="word" data-velocity="1" id="word3">TECHNOLOGY</span>
                     </h1>
                 </div>
@@ -46,7 +47,30 @@
         </header>
         
         <main>
-            <div class="section-1"></div>
+            <div class="slide slide1"></div>
+            <div class="container-fluid slide slide2 text-center">
+                <div class="container">
+                    <h1 class="display-4">OUR CONTENT</h1>
+                    <div class="row options text-center">
+                        <div class="col-md card card1">
+                            <div>
+                                <a href="#">HELLO WORLD</a>
+                            </div>
+                        </div>
+                        <div class="col-md card card2">
+                            <div>
+                                <a href="#">HELLO WORLD</a>
+                            </div>
+                        </div>
+                        <div class="col-md card card3">
+                            <div>
+                                <a href="#">HELLO WORLD</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide3">HELLO WORLD</div>
         </main>
         
         
@@ -54,39 +78,6 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        <script>
-            let word1 = document.getElementById('word1');
-            let word2 = document.getElementById('word2');
-            let word3 = document.getElementById('word3');
-            
-            const checkpoint = 300;
-            
-            function variateText(){
-                window.addEventListener('scroll', function(){
-                
-                    const currentScroll = window.pageYOffset;
-                    if (currentScroll <= checkpoint) {
-                        opacity = 1 - currentScroll / checkpoint;
-                        left = currentScroll * 0.7 + "px";
-                        right = currentScroll * -1.2+ "px";
-                    } else {
-                        opacity = 0;
-                        left = 0;
-                    } 
-
-                    word1.style.opacity = opacity;
-                    word1.style.left = left;
-                    word2.style.opacity = opacity;
-                    word2.style.left = right;
-                    word3.style.opacity = opacity;
-                    word3.style.left = left;
-                })
-            }
-            
-            function doMove() {
-                setInterval(variateText, 5000);  
-            }  
-            
-        </script>
+        <script src="assets/js/script.js"></script>
     </body>
 </html>

@@ -160,3 +160,81 @@ body {
     padding: 180px 0;
     background-color: rgb(50,68,99);
 }
+
+
+/* == FOOTER == */
+.card-footer {
+    background-color: rgb(50, 68, 90);
+    padding: 20px;
+}
+
+.card-footer p {
+    margin-top: 20px;
+    margin-left: 42px;
+    margin-bottom: 0;
+}
+
+.card-footer ul {
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.card-footer li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.icon li{
+    margin-right: 0;
+}
+
+.icon ion-icon {
+    font-size: 40px;
+    color: #c9c9c9;
+}
+
+#facebook:hover {
+    color: #4267B2;
+}
+
+#twitter:hover {
+    color: #00acee;
+}
+
+#pinterest:hover {
+    color: #E60023;
+}
+
+#youtube:hover {
+    color: #FF0000;
+}
+
+#instagram:hover {
+    color: #515bd4;
+}
+
+.card-footer li a {
+    margin-right: 20px;
+    color: #ffffff;
+}
+
+.card-footer li a:hover {
+    color: #7ea5fd;
+}
+
+.card-footer li span {
+    font-size: 80%;
+    color: #797979;
+}
+
+.copyright {
+    color: white;
+    font-size: 80%;
+}
+
+.footer-desc {
+    color: #d1d1d1;
+    padding: 0 10%;
+    font-size: 90%;
+}

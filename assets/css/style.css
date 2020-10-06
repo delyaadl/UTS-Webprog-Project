@@ -30,7 +30,19 @@ body {
     background-size: cover;
     background-position: center; 
     background-attachment: fixed;
-    height: 120vh;
+    height:700px;
+}
+
+.jumbotron-override:before {
+    content: "";
+    position: absolute;
+    top: 520px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 15em;
+    background: url("../img/border1.png") center no-repeat;
+    background-size: cover;
 }
 
 
@@ -40,7 +52,7 @@ body {
 }
 
 .tagline h1{
-    font-size: 750%;
+    font-size: 790%;
     font-family: 'Encode Sans Expanded', sans-serif;
     font-weight: 700;
     color: #eaeaea;
@@ -112,22 +124,17 @@ body {
 }
 
 .slide1 {
-    background-color: #fcfcfc;
-    height: 500px;
-    box-shadow: 0 -100px 30px 20px #fcfcfc;
-}
-
-.slide2 {
-    padding: 20px 0;
+    padding: 30px 0;
+    padding-bottom: 150px;
     overflow: hidden;
-    margin: 100px 0;
+    margin: 10px 0;
 }
 
-.slide2 h1 {
+.slide1 h1 {
     margin: 40px 0;
 }
 
-.slide2 .card {
+.slide1 .card {
     background-color: #fcfcfc;
     border: 1px solid #3498db;
     border-radius: 20px;
@@ -136,7 +143,20 @@ body {
     box-shadow: 0 0 10px 5px grey;
 }
 
-.slide3 {
-    margin-top: 30px;
-    height: 500px;
+.slide1:before {
+    content: "";
+    position: absolute;
+    top: 1350px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 15em;
+    background: url("../img/border2.png") center no-repeat;
+    background-size: cover;
+}
+
+.slide2 {
+    margin-top: -100px;
+    padding: 180px 0;
+    background-color: rgb(50,68,99);
 }

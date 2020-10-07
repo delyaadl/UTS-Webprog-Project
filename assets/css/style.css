@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;0,700;1,500;1,600;1,800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sarpanch:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@600&display=swap');
 
 * {
@@ -19,6 +13,8 @@ body {
     background-color: #fcfcfc;
     min-height: 1500px;
 }
+
+/* == JUMBOTRON == */
 
 .jumbotron {
     margin-top: 0px;
@@ -79,21 +75,7 @@ body {
     top: -50px;
 }
 
-.jumbotron-override p {
-    color: #ffffff;
-    margin: 0 auto;
-    letter-spacing: 4px;
-}
-
-.jumbotron-override .seemore {
-    padding: 7px 15px;
-    background-color: #00c1c1;
-    color: #ffffff;
-    margin-top: 20px;
-    margin-bottom: 150px;
-    border-radius: 20px;
-    letter-spacing: 4px;
-}
+/* == MAIN NAVIGATION == */
 
 .navbar-override ul {
     margin: 0 auto;
@@ -123,6 +105,8 @@ body {
     letter-spacing: 3px;
 }
 
+/* == CONTENT == */
+
 .slide1 {
     padding: 30px 0;
     padding-bottom: 150px;
@@ -131,16 +115,7 @@ body {
 }
 
 .slide1 h1 {
-    margin: 40px 0;
-}
-
-.slide1 .card {
-    background-color: #fcfcfc;
-    border: 1px solid #3498db;
-    border-radius: 20px;
-    height: 350px;
-    margin: 30px;
-    box-shadow: 0 0 10px 5px grey;
+    margin: 30px 0;
 }
 
 .slide1:before {
@@ -158,9 +133,75 @@ body {
 .slide2 {
     margin-top: -100px;
     padding: 180px 0;
-    background-color: rgb(50,68,99);
+    height: 500px;
+    background-color: rgb(50,68,90);
 }
 
+.slide3 {
+    height: 400px;
+}
+
+/* -- CARD -- */
+.card {
+    border-radius: 20px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 0 0 15px 5px grey;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.card1 {
+    background-image: linear-gradient(rgba(50, 68, 88, 0.55), rgba(50, 68, 88, 0.55)), url(../img/card1.jpg);
+}
+
+.card2 {
+    background-image: linear-gradient(rgba(50, 68, 88, 0.55), rgba(50, 68, 88, 0.55)), url(../img/card2.jpg);
+}
+
+.card3 {
+    background-image: linear-gradient(rgba(50, 68, 88, 0.55), rgba(50, 68, 88, 0.55)), url(../img/card3.jpg);
+}
+
+.content {
+    transform: translateY(170%);
+    transition-duration: 1s;    
+}
+
+.content h2 {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: 700;
+}
+
+.hide {
+    color: transparent;
+    transition: color 1s;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    color: transparent;
+    border-radius: 20px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.card:hover .content {
+    transform: translateY(70%);
+    transition-duration: 1s;
+}
+
+.card:hover .hide {
+    color: white;
+    transition: color 0.2s;
+}
+
+.card:hover .btn {
+    background-color: black;
+    color: white;
+    transition: background-color 1s, color 1s;
+}
 
 /* == FOOTER == */
 .card-footer {

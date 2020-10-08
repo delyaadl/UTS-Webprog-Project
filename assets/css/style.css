@@ -150,6 +150,7 @@ body {
     background-position: center;
     background-size: cover;
     color: white;
+    transition-duration: 1s;
 }
 
 .card1 {
@@ -188,7 +189,7 @@ body {
 }
 
 .card:hover {
-    transform: translateY(-10%);
+    transform: translateY(-5%);
     transition-duration: 1s;
 }
 
@@ -212,16 +213,17 @@ body {
 .card-footer {
     background-color: rgb(50, 68, 90);
     padding: 20px;
+    color: #ffffff;
 }
 
 .card-footer p {
     margin-top: 20px;
-    margin-left: 42px;
     margin-bottom: 0;
 }
 
 .card-footer ul {
     list-style: none;
+    margin-left: 25px;
     margin-top: 20px;
     margin-bottom: 0;
 }
@@ -272,6 +274,30 @@ body {
 .card-footer li span {
     font-size: 80%;
     color: #797979;
+}
+
+.card-footer h4 {
+    margin-top: 30px;
+    margin-bottom: -15px;
+}
+
+.card-footer form {
+    padding: 20px 0;
+}
+
+.news-input {
+    width: 35%;
+    padding: 10px;
+}
+
+.news-submit {
+    background-color: #b22929;
+    padding: 10px 30px;
+}
+
+.news-submit:hover {
+    background-color: #882222;
+    transition: background-color, 0.2s;
 }
 
 .copyright {

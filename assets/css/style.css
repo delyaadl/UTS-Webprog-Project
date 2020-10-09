@@ -131,17 +131,14 @@ body {
 }
 
 .slide2 {
-    margin-top: -100px;
-    padding: 180px 0;
-    height: 500px;
-    background-color: rgb(50,68,90);
-}
-
-.slide3 {
     height: 400px;
+    margin-top: -100px;
+    padding: 180px 0 80px 0;
+    background-color: rgb(50,68,90);
+    color: white;
 }
 
-/* -- CARD -- */
+/* -- CARD SLIDE 1 -- */
 .card {
     border-radius: 20px;
     height: 400px;
@@ -209,6 +206,107 @@ body {
     transition: background-color 1s, color 1s;
 }
 
+/* == SLIDE 3 == */
+.slide3 {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.slide3 .col:first-of-type {
+    margin-left: 100px;
+}
+
+.slide3 .col:last-of-type {
+    margin-right: 100px;
+}
+
+.slide3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.slide3 div {
+    transition-duration: 0.5s;
+}
+
+.slide3 div:hover{
+    transform: translateY(-2%);
+    transition-duration: 0.5s;
+}
+
+.slide3 h2 {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+
+.slide3 .col {
+    padding: 0;
+}
+
+.slide3 img {
+    text-align: left;
+    height: 250px;
+    width: 350px;
+    object-fit: cover;
+}
+
+.slide3 p {
+    color: #5a5a5a;
+}
+
+.slide3 span {
+    color: #6c6c90;
+    margin-left: 15px;
+}
+
+.slide3 p, .slide3 h4 {
+    margin: 20px 0;
+}
+
+.subscribe-news {
+    margin: 50px 0;
+}
+
+.subscribe-news .subscribe {
+    margin: 0 80px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.subscribe-news p {
+    margin-bottom: 30px;
+}
+
+.subscribe-news form {
+    padding: 20px 0;
+}
+
+.news-input {
+    width:50%;
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+.news-submit {
+    color: white;
+    font-size: 120%;
+    font-weight: 500;
+    width: 50%;
+    margin-top: 15px;
+    background-color: rgb(50, 60, 88);
+    padding: 10px 30px;
+    transition: background-color, 0.2s;
+}
+
+.news-submit:hover {
+    background-color: rgb(25, 30, 44);
+    transition: background-color, 0.2s;
+}
+
 /* == FOOTER == */
 .card-footer {
     background-color: rgb(50, 68, 90);
@@ -274,30 +372,6 @@ body {
 .card-footer li span {
     font-size: 80%;
     color: #797979;
-}
-
-.card-footer h4 {
-    margin-top: 30px;
-    margin-bottom: -15px;
-}
-
-.card-footer form {
-    padding: 20px 0;
-}
-
-.news-input {
-    width: 35%;
-    padding: 10px;
-}
-
-.news-submit {
-    background-color: #b22929;
-    padding: 10px 30px;
-}
-
-.news-submit:hover {
-    background-color: #882222;
-    transition: background-color, 0.2s;
 }
 
 .copyright {

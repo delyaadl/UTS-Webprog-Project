@@ -49,23 +49,13 @@
 }
 
 @media only screen and (max-width: 1199px) and (min-width:992px){
-    .content1 {
-        transform: translateY(180%);
-        transition-duration: 1s;    
-    }
-    
-    .content2 {
-        transform: translateY(148%);
-        transition-duration: 1s;    
-    }
-    
-    .content3 {
-        transform: translateY(148%);
+    .content {
+        transform: translateY(200%);
         transition-duration: 1s;    
     }
     
     .content h2{
-        font-size: 80%;
+        font-size: 160%;
     }
     
     .content p {

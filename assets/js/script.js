@@ -1,6 +1,8 @@
 let word1 = document.getElementById('word1');
 let word2 = document.getElementById('word2');
 let word3 = document.getElementById('word3');
+let left;
+let right;
 
 const checkpoint = 300;
             
@@ -21,4 +23,22 @@ window.addEventListener('scroll', function(){
     word2.style.left = right;
     word3.style.opacity = opacity;
     word3.style.left = left; 
-}) 
+});
+
+$(".pop1")
+    .hover(function() {
+        $("#pop-img")
+            .attr("src", "assets/img/news-5.jpg");
+    });
+
+$(".pop2")
+    .hover(function() {
+        $("#pop-img")
+            .attr("src", "assets/img/news-8.png");
+    });
+
+$(".pop3")
+    .hover(function() {
+        $("#pop-img")
+            .attr("src", "assets/img/news-19.jpg");
+    });

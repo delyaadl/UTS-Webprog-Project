@@ -1,0 +1,53 @@
+.jumbotron-override {
+    height: 70vh;
+}
+
+.jumbotron-override::before {
+    bottom: 30%;
+}
+
+.section-1-item h1, .section-2-item h1, .section-3-item h1, .section-4-item h1 {
+    text-align: left;
+    margin-bottom: 50px;
+    font-size: 280%;
+    font-weight: 500;
+}
+
+.section-1, .section-2, .section-3, .section-4 {
+    padding-top: 50px;
+}
+
+.latest {
+    margin-bottom: 50px;
+}
+
+.latest img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.latest a {
+    color: #313131;
+}
+
+.section-2, .section-3, .section-4 {
+    height: 400px;
+}
+
+.section-2 {
+    background-color: rgb(227, 227, 227);
+}
+
+.section-3 {
+    background-color: rgb(50, 68, 88);
+}
+
+.section-3-item h1 {
+    color: white;
+}
+
+.section-4 {
+    background-color: #fcfcfc;
+}

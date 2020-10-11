@@ -29,7 +29,7 @@ a:link {
     background-size: cover;
     background-position: center; 
     background-attachment: fixed;
-    height:120vh;
+    height:115vh;
 }
 
 .jumbotron-override::before {
@@ -218,13 +218,14 @@ a:link {
 }
 
 .slide2 .carousel img {
-    height: 300px;
+    width: 40%;
     object-fit: cover;
 }
 
 .slide2 .media-body {
     margin: auto;
     margin-left: 30px;
+    width: 70%;
 }
 
 .media-body h5 {

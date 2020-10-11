@@ -11,6 +11,14 @@
     }
 }
 
+@media only screen and (max-width: 360px){
+    .tagline span {
+        margin: -30px -50px;
+        font-size: 30%;
+    }
+}
+
+
 @media only screen and (max-width: 991px) and (min-width:768px){
     .content1 {
         transform: translateY(180%);

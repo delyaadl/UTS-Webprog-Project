@@ -21,7 +21,7 @@
     margin-bottom: 50px;
 }
 
-.latest img {
+.latest img, .section-2 .row2 img {
     width: 350px;
     height: 250px;
     object-fit: cover;
@@ -32,12 +32,19 @@
     color: #313131;
 }
 
-.section-2, .section-3, .section-4 {
-    height: 400px;
-}
-
 .section-2 {
     background-color: rgb(227, 227, 227);
+}
+
+.section-2 .row1 img {
+    width: 525px;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.section-2 .row1 .img1 {
+    margin-right: 30px;
 }
 
 .section-3 {
@@ -46,6 +53,22 @@
 
 .section-3-item h1 {
     color: white;
+}
+
+.section-3 .row1 img {
+    width: 100%;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+.section-3 .col2 {
+    transform: translateY(-15%);
+    margin-left: 30px;
+}
+
+.section-3 .sidecol img {
+    width: 102%;
+    margin-left: 50px;
 }
 
 .section-4 {

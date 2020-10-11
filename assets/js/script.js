@@ -28,17 +28,17 @@ window.addEventListener('scroll', function(){
 $(".pop1")
     .hover(function() {
         $("#pop-img")
-            .attr("src", "assets/img/news-5.jpg");
+            .attr("src", "assets/img/covid.jpg");
     });
 
 $(".pop2")
     .hover(function() {
         $("#pop-img")
-            .attr("src", "assets/img/news-8.png");
+            .attr("src", "assets/img/winxp.png");
     });
 
 $(".pop3")
     .hover(function() {
         $("#pop-img")
-            .attr("src", "assets/img/news-19.jpg");
+            .attr("src", "assets/img/skye.jpg");
     });

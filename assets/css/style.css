@@ -73,7 +73,6 @@ a:link {
 }
 
 /* == MAIN NAVIGATION == */
-
 .navbar-override ul {
     margin: 0 auto;
     font-family: Raleway, sans-serif;
@@ -219,13 +218,13 @@ a:link {
 
 .slide2 .carousel img {
     width: 40%;
+    height: 300px;
     object-fit: cover;
 }
 
 .slide2 .media-body {
     margin: auto;
     margin-left: 30px;
-    width: 70%;
 }
 
 .media-body h5 {

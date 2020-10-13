@@ -1,9 +1,54 @@
-.jumbotron-override {
-    height: 70vh;
+.carousel-inner img {
+    height: 90vh;
+    object-fit: cover;
 }
 
-.jumbotron-override::before {
-    bottom: 30%;
+.carousel-inner::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 15em;
+    background: url("../img/border1.png") center no-repeat;
+    background-size: cover;
+    z-index: 999;
+}
+
+.wrap {
+    position:relative;
+}
+
+.wrap:before {
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index:1;
+}
+
+.carousel-caption-override {
+    position: absolute;
+    margin: 250px 0;
+}
+
+.carousel-caption-override h1 {
+    font-weight: 600;
+    font-size: 400%;
+    padding-right: 30px;
+    margin: 0;
+}
+
+.carousel-caption-override span {
+    color: #7ba4ff;
+}
+
+.control-override {
+    margin-top: -10%;
 }
 
 .section-1-item h1, .section-2-item h1, .section-3-item h1, .section-4-item h1 {
@@ -76,4 +121,7 @@
 
 .section-4 {
     background-color: #fcfcfc;
+}
+.navbar-override {
+    background-color: rgb(50, 68, 88);
 }
